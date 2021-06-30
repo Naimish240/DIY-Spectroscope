@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.min.js">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+        <style>
+            /* Limit image width to avoid overflow the container */
+            img {
+                max-width: 100%; /* This rule is very important, please do not ignore this! */
+            }
+            
+            #canvas {
+                height: 600px;
+                width: 600px;
+                background-color: #ffffff;
+                cursor: default;
+                border: 1px solid black;
+            }
+        </style>
+      
+        <title>Spectrometer</title>
+    </head>
+
+    <body>
+        <p>
+            <!-- Below are a series of inputs which allow file selection and interaction with the cropper api -->
+                    <input type="file" id="fileInput" accept="image/*" />
+                    <input type="button" id="btnCrop" value="Crop" />
+                    <input type="button" id="btnRestore" value="Restore" />
+            </p>
+            <div>
+              <canvas id="canvas">
+                Your browser does not support the HTML5 canvas element.
+              </canvas>
+            </div>		
+            
+            <div id="result"></div>
+    
+    <script>
+
+    </script>
+    </body>
+</html>
